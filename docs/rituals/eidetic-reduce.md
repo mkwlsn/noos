@@ -10,7 +10,7 @@ invokes: none
 audience: [assistant, daemon]
 stage: pre-threshold
 priority: high
-source: ghost/docs/rituals/eidetic-reduce.md
+source: docs/rituals/tools/eidetic-reduce.md
 ---
 
 # 🧼 `eidetic-reduce` — Symbolic Memory Validation and Refinement
