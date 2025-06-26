@@ -1,0 +1,244 @@
+<div class="developer_docs--section--FXtC8" id="intro">
+  <div class="developer_docs--sectionHeader--opGQm">Introduction</div>
+  <div>
+    <div class="developer_docs--sectionWrapper--ZwRzi">
+      <p>
+        Welcome to Figma, the world's first collaborative interface design tool.
+        Figma allows designers to create and prototype their digital experiences
+        - together in real-time and in one place - helping them turn their ideas
+        and visions into products, faster. Figma's mission is to make design
+        accessible to everyone. The Figma API is one of the ways we aim to do
+        that.
+      </p>
+      <div class="developer_docs--subsectionHeader--xLpGV">
+        What can I do with the Figma API?
+      </div>
+      <p>
+        The Figma API supports read access and interactions with Figma files.
+        This gives you the ability to view and extract any objects or layers,
+        and their properties, so you can render them as images outside of Figma.
+        You can then present your designs, connect them to other applications,
+        or use them to expand on your vision. Future versions of the API will
+        unlock even greater functionality around Files.
+      </p>
+      <div class="developer_docs--subsectionHeader--xLpGV">
+        How does it work?
+      </div>
+      <p>
+        The Figma API is based on the
+        <a
+          rel="noopener nofollow noreferrer ugc"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+          >REST</a
+        >
+        structure. We support authentication via
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#access-tokens"
+          >access tokens</a
+        >
+        and
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#oauth2"
+          >OAuth2</a
+        >. Requests are made via
+        <span class="format--bold--sWViV">HTTP endpoints</span> with clear
+        functions and appropriate response codes. Endpoints allow you to request
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#files"
+          >files</a
+        >,
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#get-images-endpoint"
+          >images</a
+        >,
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#version-history"
+          >file versions</a
+        >,
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#users"
+          >users</a
+        >,
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#comments"
+          >comments</a
+        >,
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#get-team-projects-endpoint"
+          >team projects</a
+        >
+        and
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#get-project-files-endpoint"
+          >project files</a
+        >.
+      </p>
+      <p>
+        Once granted access, you can use the Figma API to inspect a
+        <span class="format--bold--sWViV">JSON</span> representation of the
+        file. Every layer or object in a file will be represented within the
+        file by a node (subtree). You will then be able to access and isolate
+        the object and any properties associated with it. In addition to
+        accessing files and layers, you will be able to GET and POST comments to
+        files.
+      </p>
+      <div class="developer_docs--subsectionHeader--xLpGV">Getting started</div>
+      <p>
+        If you’re not already using Figma, the first step is to sign up and
+        create an account
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="https://www.figma.com/signup"
+          >over here.</a
+        >
+      </p>
+      <p>
+        Once you have a Figma account, the next step is to authenticate with the
+        API. This can be done using either
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#oauth2"
+          >OAuth2</a
+        >
+        or
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#access-tokens"
+          >access tokens</a
+        >.
+      </p>
+      <p>
+        You can then browse our endpoints and start making queries against the
+        Figma API. We recommend starting with the basics by learning about
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#files"
+          >Figma files</a
+        >, before moving on to more advanced topics such as
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#comments"
+          >comments</a
+        >,
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#users"
+          >users</a
+        >,
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#version-history"
+          >version history</a
+        >, and
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="#projects"
+          >projects</a
+        >.
+      </p>
+      <p>
+        If you plan on building a fully-fledged app, that others can share and
+        use, then you can register your app by heading to
+        <a
+          rel="noopener"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="https://www.figma.com/developers/apps"
+          >My apps</a
+        >
+        in your Figma account.
+      </p>
+      <div class="developer_docs--subsectionHeader--xLpGV">
+        OpenAPI specification
+      </div>
+      <p>
+        The Figma REST API is fully described in an OpenAPI specification in the
+        open source
+        <a
+          target="_blank"
+          rel="noopener nofollow noreferrer ugc"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="https://github.com/figma/rest-api-spec"
+          >figma/rest-api-spec</a
+        >
+        repository.
+      </p>
+      <p>
+        OpenAPI is a specification for describing HTTP APIs in a
+        language-agnostic manner. It has a large ecosystem of tools to let you
+        generate API documentation, client SDKs, and more. We also provide
+        custom Typescript types generated from the OpenAPI specification for
+        those of you with Typescript codebases to make it easy to write
+        type-safe code out of the box. For more information, see the
+        <a
+          target="_blank"
+          rel="noopener nofollow noreferrer ugc"
+          data-fpl-component=""
+          class="link__link__n7llU"
+          href="https://github.com/figma/rest-api-spec"
+          >README</a
+        >.
+      </p>
+      <div class="blackboard--blackboardWrapper--k3e-8">
+        <div
+          class="blackboard--blueBlackboard--cUVJY blackboard--blackboard--VH1qK"
+        >
+          <div class="blackboard--blackboardContent--dvx-6">
+            <div class="developer_docs--codeTextSection--KrK5Q">
+              <div class="developer_docs--codeTextHeader--Wl6ib">Base URL</div>
+              <div class="developer_docs--codeText--mtqhX">
+                https://api.figma.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
