@@ -12,6 +12,9 @@ This is a local-first scraping utility for harvesting 100% of Figma’s develope
 - **Plugin API Reference** (`scrape-plugin-api-reference.js`)  
   Visits every API method, type, and object listed in the Plugin API index.
 
+- **Code Connect Docs** (`scrape-code-connect.js`)  
+  Covers all Code Connect framework integrations and configuration guides.
+
 Each script saves structured HTML chunks to the `out/` directory using consistent filenames.
 
 ---
@@ -24,9 +27,10 @@ Run any script individually:
 node scrape-rest-api.js
 node scrape-plugin-api-guide.js
 node scrape-plugin-api-reference.js
+node scrape-code-connect.js
 ```
 
-Or run all three in sequence:
+Or run all four in sequence:
 
 ```bash
 node scrape-all.js
@@ -43,7 +47,8 @@ Each HTML file corresponds to a fully-hydrated section or method from the docs, 
 - `rest-api-files.html`
 - `plugin-api-figma.html`
 - `plugin-api-createcomponent.html`
-- etc.
+- `code-connect-react.html`
+- `code-connect-config-file.html`
 
 ---
 

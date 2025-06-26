@@ -4,6 +4,7 @@ const scripts = [
   "scrape-rest-api.js",
   "scrape-plugin-api-guide.js",
   "scrape-plugin-api-reference.js",
+  "scrape-code-connect.js",
 ];
 
 console.log("🚀 Starting full Figma docs scrape...\n");
