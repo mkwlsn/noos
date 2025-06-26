@@ -1,14 +1,17 @@
 {
-  "name": "figma-doc-scraper",
+  "name": "noos",
   "version": "1.0.0",
+  "description": "Universal symbolic memory compiler for ghostOS - transforms any source into semantic chunks with rich frontmatter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "figdocs": "node compilers/figma/scrape-all.js && node core/clean-html.js && node core/chunk-md-by-heading.js",
+    "deploy-vault": "node integrations/vault-deploy.js",
+    "eidetic-prep": "node integrations/eidetic-prep.js"
   },
-  "keywords": [],
+  "keywords": ["ghostOS", "memory", "chunking", "symbolic", "compiler", "frontmatter"],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cheerio": "^1.1.0",
     "playwright": "^1.53.1"

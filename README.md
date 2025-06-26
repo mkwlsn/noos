@@ -1,81 +1,74 @@
-# figma-doc-scraper
+# noos
 
-**Enterprise-grade Figma documentation corpus** — complete pipeline from live docs to LLM-ready atomic concepts.
+**Universal symbolic memory compiler for ghostOS** — transforms any source into semantic chunks with rich frontmatter for the symbolic memory stack.
 
-## 🏗️ Three-Stage Pipeline
+## 🧠 ghostOS Memory Stack
 
 ```
-📡 SCRAPE → 🧼 CLEAN → ⚛️ CHUNK
-Raw HTML    Markdown    Atomic Concepts
+🔍 Sources → 🧠 noos → 🧼 eidetic-reduce → 👻 mneme → 🏛️ ghostvault
+Raw Content  Compiler   Validation       Retrieval    Storage
 ```
 
-**Stage 1: Bulletproof Scraping**
-- Handles React hydration, lazy loading, and modern web architecture
-- 100% coverage across REST API, Plugin API, and Code Connect docs
-- Comprehensive error handling and quality validation
+**noos** is the foundational chunking engine that transforms raw content into symbolic memory units that ghostOS rituals can query, validate, and retrieve.
 
-**Stage 2: Enterprise Cleaning** 
-- Versioned runs (`/clean/2025-06-26/`) with full traceability
-- Rich metadata extraction and content normalization
-- Content hashing for diff analysis between runs
+## 🏗️ Architecture
 
-**Stage 3: Atomic Chunking**
-- Smart heading-level detection and concept extraction
-- Cross-referenced chunks with sibling navigation
-- Production logging with severity-aware error tracking
+**Compiler Pattern:**
+```
+noos/
+├── compilers/          # Source-specific compilers
+│   ├── figma/         # Figma documentation compiler
+│   └── [web/, docs/]  # Future: any source
+├── core/              # Universal chunking engine
+├── schemas/           # Memory schemas
+└── integrations/      # ghostOS integration
+```
+
+**Universal Output:**
+- ✅ **Semantic chunks** with heading-based boundaries
+- ✅ **Rich frontmatter** (chunk_type, tags, sibling_chunks)
+- ✅ **Symbolic metadata** (source, content_hash, token_count)
+- ✅ **eidetic-reduce ready** for validation rituals
+- ✅ **mneme compatible** for retrieval queries
 
 ---
 
 ## 🚀 Quick Start
 
-**Complete pipeline** (recommended):
+**3-Stage Pipeline** (understand the compiler):
 ```bash
-# 1. Scrape all documentation
-node scrape-all.js
+# Stage 1: Source compilation
+node compilers/figma/scrape-all.js
+# → Scrapes Figma docs handling React hydration, pagination, lazy loading
+# → Outputs: Raw HTML files in output/raw/
 
-# 2. Clean into versioned markdown
-node clean-html.js
+# Stage 2: Content cleaning  
+node core/clean-html.js
+# → Converts HTML to markdown with rich frontmatter and metadata
+# → Outputs: Versioned markdown in output/clean/YYYY-MM-DD/
 
-# 3. Chunk into atomic concepts  
-node chunk-md-by-heading.js
+# Stage 3: Symbolic chunking
+node core/chunk-md-by-heading.js
+# → Creates semantic chunks with sibling navigation and classification
+# → Outputs: noos chunks ready for ghostOS in output/chunks/YYYY-MM-DD/
 ```
 
-**Individual stages:**
+**Convenience shortcut:**
 ```bash
-# Stage 1: Scraping
-node scrape-rest-api.js
-node scrape-plugin-api-guide.js
-node scrape-plugin-api-reference.js  
-node scrape-code-connect.js
+npm run figdocs  # Runs all 3 stages for Figma documentation
+```
 
-# Stage 2: Cleaning
-node clean-html.js
-
-# Stage 3: Chunking
-node chunk-md-by-heading.js
+**ghostOS integration:**
+```bash
+npm run deploy-vault    # Sync chunks to ghostvault
+npm run eidetic-prep    # Prepare for eidetic-reduce validation
 ```
 
 ---
 
-## 📊 Enterprise Output
+## 📊 Symbolic Output
 
-**Versioned Corpus Structure:**
-```
-clean/
-├── 2025-06-26/           # Versioned run
-│   ├── manifest.json     # Complete run metadata
-│   ├── createcomponent.md
-│   └── insertcharacters.md
-└── chunks/
-    └── 2025-06-26/       # Atomic concepts
-        ├── chunk-manifest.json
-        ├── chunk-errors.log
-        ├── createcomponent-overview.md
-        ├── createcomponent-parameters.md
-        └── insertcharacters-usage.md
-```
-
-**Rich Chunk Metadata:**
+**Chunk Structure:**
 ```yaml
 ---
 title: insertCharacters
@@ -88,67 +81,63 @@ content_hash: a1b2c3d4e5f6
 token_count: 340
 source_url: https://www.figma.com/plugin-docs/api/TextNode/
 ---
+
+# insertCharacters(start, characters, style?)
+
+Inserts characters into the text node at the specified position...
+```
+
+**Versioned Output:**
+```
+output/
+├── raw/               # Source material (gitignored)
+├── clean/             # Cleaned markdown
+│   └── 2025-06-26/   # Versioned runs
+└── chunks/            # Symbolic memory chunks
+    └── 2025-06-26/   # Ready for ghostOS rituals
 ```
 
 ---
 
-## 🎯 Advanced Features
+## 🎯 ghostOS Integration
 
-**🔄 Diff-Friendly Versioning**
-- Content hashing enables precise change detection
-- Compare corpus evolution over time
-- Identify new, modified, or removed concepts
+**Memory Validation:**
+- Chunks formatted for `eidetic-reduce` ritual
+- Deduplication and drift detection ready
+- Quality metrics and error logging
 
-**🔗 Semantic Navigation**  
-- Sibling chunk references for agent exploration
-- "What other methods are on TextNode?" queries
-- Context-aware RAG retrieval
+**Retrieval Compatibility:**
+- `mneme` daemon can query by chunk_type, tags, source
+- Sibling chunk navigation for semantic exploration
+- Cross-source concept linking preparation
 
-**🏷️ Content Classification**
-- Auto-detected chunk types: `method`, `guide`, `tutorial`, `error`
-- Filter corpus by content type for targeted processing
-- Quality metrics and distribution analytics
-
-**⚠️ Production Monitoring**
-- Severity-aware error logging (`[ERROR]`, `[WARN]`)
-- Quality validation with token distribution analysis
-- Comprehensive corpus health reporting
+**Ritual Support:**
+- Future `ghost search`, `ghost trace`, `ghost surf` commands
+- Symbolic memory operations on clean, structured chunks
+- Integration with broader ghostOS memory stack
 
 ---
 
-## 📈 Corpus Quality
+## 🔧 Compiler Development
 
-**Scale:** 200+ atomic concepts, 50K+ tokens  
-**Coverage:** 100% of public Figma developer documentation  
-**Quality:** P90 chunk size optimized for embeddings  
-**Freshness:** Always pulls latest documentation versions  
+**Adding New Sources:**
+1. Create `compilers/[source]/` directory
+2. Implement source-specific scraping/extraction
+3. Output to standard format for `core/` processing
+4. Universal chunking engine handles the rest
 
-**Perfect for:**
-- **Vector databases** → Pre-chunked, semantically meaningful concepts
-- **LLM fine-tuning** → High-quality, structured training data  
-- **RAG systems** → Rich metadata for precise retrieval
-- **Developer tools** → Complete API surface understanding
+**Core Engine:**
+- `core/clean-html.js` — HTML → markdown normalization
+- `core/chunk-md-by-heading.js` — Semantic boundary detection
+- Universal frontmatter generation and metadata extraction
 
 ---
 
-## 🔧 Advanced Usage
+## 📈 Current Status
 
-**Content filtering:**
-```bash
-# Only methods and tutorials
-grep "chunk_type: method\|chunk_type: tutorial" clean/chunks/*/chunk-manifest.json
+**Figma Compiler:** ✅ Complete (308 chunks, 100% API coverage)  
+**Core Engine:** ✅ Production-ready with enterprise logging  
+**ghostOS Integration:** 🚧 Ready for ritual development  
+**Future Compilers:** 📋 Web, docs, notes, conversations
 
-# Find large chunks that need splitting
-grep "\[WARN\].*Large chunk" clean/chunks/*/chunk-errors.log
-```
-
-**Corpus analysis:**
-```bash
-# Compare two scrape runs
-node diff-clean-passes.js clean/2025-06-26 clean/2025-09-01
-
-# Quality validation
-node validate-corpus.js clean/chunks/2025-06-26
-```
-
-Built for teams that need **bulletproof documentation pipelines** and **enterprise-grade corpus management**.
+Built as the **symbolic memory foundation** for the ghostOS cognition system.
