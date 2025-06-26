@@ -1,62 +1,66 @@
 # figma-doc-scraper
 
-This is a local-first scraping utility for harvesting 100% of Figma’s developer documentation, structured for LLM ingestion, plugin development, and deep tool integration.
+**Complete Figma developer documentation harvester** — built for LLM training, RAG systems, and developer tooling that needs comprehensive API coverage.
 
-## 📦 What it Scrapes
+## 📦 Coverage
 
-- **REST API** (`scrape-rest-api.js`)  
-  Grabs all hydrated endpoint documentation from the REST API page.
-- **Plugin Docs (Guides)** (`scrape-plugin-api-guide.js`)  
-  Navigates tutorial-style documentation via pagination.
+Captures **100% of Figma's developer documentation** across four major areas:
 
-- **Plugin API Reference** (`scrape-plugin-api-reference.js`)  
-  Visits every API method, type, and object listed in the Plugin API index.
+- **🌐 REST API** — All endpoints, authentication, webhooks, and data structures
+- **📚 Plugin Guides** — Complete tutorial documentation and implementation guides  
+- **🔧 Plugin API Reference** — Every method, property, type, and object in the Plugin API
+- **🔗 Code Connect** — Framework integrations (React, SwiftUI, HTML, etc.) and configuration
 
-- **Code Connect Docs** (`scrape-code-connect.js`)  
-  Covers all Code Connect framework integrations and configuration guides.
-
-Each script saves structured HTML chunks to the `out/` directory using consistent filenames.
+**Output:** 100+ structured HTML files ready for processing, each containing a complete documentation section.
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Usage
 
-Run any script individually:
-
-```bash
-node scrape-rest-api.js
-node scrape-plugin-api-guide.js
-node scrape-plugin-api-reference.js
-node scrape-code-connect.js
-```
-
-Or run all four in sequence:
-
+**Full scrape** (recommended):
 ```bash
 node scrape-all.js
 ```
 
-All output lands in the `/out` directory.
+**Individual sections:**
+```bash
+node scrape-rest-api.js
+node scrape-plugin-api-guide.js  
+node scrape-plugin-api-reference.js
+node scrape-code-connect.js
+```
+
+All files save to `/out` with consistent naming:
+- `rest-api-*.html`
+- `plugin-api-*.html` 
+- `code-connect-*.html`
 
 ---
 
-## 🔍 Output
+## 🎯 Use Cases
 
-Each HTML file corresponds to a fully-hydrated section or method from the docs, named by slug:
+**LLM Training & RAG**
+- Pre-processed documentation chunks for vector databases
+- Training data for Figma-specific coding assistants
+- Context injection for developer chat interfaces
 
-- `rest-api-files.html`
-- `plugin-api-figma.html`
-- `plugin-api-createcomponent.html`
-- `code-connect-react.html`
-- `code-connect-config-file.html`
+**Developer Tooling**
+- Offline documentation for CLI tools
+- API reference integration in IDEs
+- Automated code generation from API specs
+
+**Research & Analysis**
+- Complete API surface analysis
+- Documentation coverage auditing
+- Integration complexity assessment
 
 ---
 
-## 🧱 Next Steps
+## ⚡ Output Quality
 
-You can convert the output into Markdown, JSON, or vector chunks for use in:
+- **Comprehensive**: Captures dynamic content that standard crawlers miss
+- **Structured**: Clean HTML with consistent formatting 
+- **Complete**: Includes code examples, type definitions, and usage patterns
+- **Fresh**: Always pulls latest documentation versions
 
-- LLM fine-tuning
-- Retrieval-augmented generation (RAG)
-- GhostOS ingestion
-- Developer agent bootstrapping
+Perfect for teams building Figma integrations, developer tools, or AI systems that need deep Figma API knowledge.
