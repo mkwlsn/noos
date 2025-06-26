@@ -14,6 +14,7 @@ Raw Content  Compiler   Validation       Retrieval    Storage
 ## 🏗️ Architecture
 
 **Compiler Pattern:**
+
 ```
 noos/
 ├── compilers/          # Source-specific compilers
@@ -25,6 +26,7 @@ noos/
 ```
 
 **Universal Output:**
+
 - ✅ **Semantic chunks** with heading-based boundaries
 - ✅ **Rich frontmatter** (chunk_type, tags, sibling_chunks)
 - ✅ **Symbolic metadata** (source, content_hash, token_count)
@@ -36,13 +38,14 @@ noos/
 ## 🚀 Quick Start
 
 **3-Stage Pipeline** (understand the compiler):
+
 ```bash
 # Stage 1: Source compilation
 node compilers/figma/scrape-all.js
 # → Scrapes Figma docs handling React hydration, pagination, lazy loading
 # → Outputs: Raw HTML files in output/raw/
 
-# Stage 2: Content cleaning  
+# Stage 2: Content cleaning
 node core/clean-html.js
 # → Converts HTML to markdown with rich frontmatter and metadata
 # → Outputs: Versioned markdown in output/clean/YYYY-MM-DD/
@@ -54,11 +57,13 @@ node core/chunk-md-by-heading.js
 ```
 
 **Convenience shortcut:**
+
 ```bash
 npm run figdocs  # Runs all 3 stages for Figma documentation
 ```
 
 **ghostOS integration:**
+
 ```bash
 npm run deploy-vault    # Sync chunks to ghostvault
 npm run eidetic-prep    # Prepare for eidetic-reduce validation
@@ -69,10 +74,11 @@ npm run eidetic-prep    # Prepare for eidetic-reduce validation
 ## 📊 Symbolic Output
 
 **Chunk Structure:**
+
 ```yaml
 ---
 title: insertCharacters
-slug: textnode-insertcharacters  
+slug: textnode-insertcharacters
 chunk_type: method
 sibling_chunks: ["textnode-deletecharacters", "textnode-getstyledtextsegments"]
 tags: []
@@ -81,13 +87,13 @@ content_hash: a1b2c3d4e5f6
 token_count: 340
 source_url: https://www.figma.com/plugin-docs/api/TextNode/
 ---
-
 # insertCharacters(start, characters, style?)
 
 Inserts characters into the text node at the specified position...
 ```
 
 **Versioned Output:**
+
 ```
 output/
 ├── raw/               # Source material (gitignored)
@@ -102,16 +108,19 @@ output/
 ## 🎯 ghostOS Integration
 
 **Memory Validation:**
+
 - Chunks formatted for `eidetic-reduce` ritual
 - Deduplication and drift detection ready
 - Quality metrics and error logging
 
 **Retrieval Compatibility:**
+
 - `mneme` daemon can query by chunk_type, tags, source
 - Sibling chunk navigation for semantic exploration
 - Cross-source concept linking preparation
 
 **Ritual Support:**
+
 - Future `ghost search`, `ghost trace`, `ghost surf` commands
 - Symbolic memory operations on clean, structured chunks
 - Integration with broader ghostOS memory stack
@@ -121,12 +130,14 @@ output/
 ## 🔧 Compiler Development
 
 **Adding New Sources:**
+
 1. Create `compilers/[source]/` directory
 2. Implement source-specific scraping/extraction
 3. Output to standard format for `core/` processing
 4. Universal chunking engine handles the rest
 
 **Core Engine:**
+
 - `core/clean-html.js` — HTML → markdown normalization
 - `core/chunk-md-by-heading.js` — Semantic boundary detection
 - Universal frontmatter generation and metadata extraction
@@ -141,3 +152,10 @@ output/
 **Future Compilers:** 📋 Web, docs, notes, conversations
 
 Built as the **symbolic memory foundation** for the ghostOS cognition system.
+
+---
+
+## 📄 License
+
+This repository is not currently open source. All rights reserved.  
+For licensing inquiries, contact [mkwlsn@github.com].
