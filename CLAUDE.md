@@ -185,7 +185,7 @@ README.md                  # Enterprise-grade documentation
 ### noos Development Workflow
 ```bash
 # Full Figma compilation
-npm run figma
+npm run figdocs
 
 # Individual stages
 node compilers/figma/scrape-all.js
