@@ -1,0 +1,51 @@
+# Scraped documentation output
+out/
+*.html
+
+# Cleaned/processed content (large files)
+clean/*.html
+clean/*.json
+clean/*.md
+clean/chunks/
+clean/vectors/
+
+# Keep clean directory structure and small config files
+!clean/
+!clean/.gitkeep
+!clean/*.yaml
+!clean/*.yml
+!clean/*.txt
+!clean/README.md
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
