@@ -1,0 +1,117 @@
+---
+title: >-
+  boundVariables?: { readonly [field in VariableBindableNodeField]?:
+  VariableAlias} & { readonly [field in VariableBindableTextField]?:
+  VariableAlias[]} & { fills: VariableAlias[]; strokes: VariableAlias[];
+  effects: VariableAlias[]; layoutGrids: VariableAlias[]; componentProperties: {
+  [propertyName: string]: VariableAlias }; textRangeFills: VariableAlias[] }
+  [readonly] + setBoundVariable(field: VariableBindableNodeField |
+  VariableBindableTextField, variable: Variable | null): void
+slug: StampNode-boundvariables-readonly-field-in-variabl
+source_file: plugin-api-StampNode.html
+source_url: 'https://www.figma.com/plugin-docs/api/StampNode/'
+doc_type: plugin-api
+created: 2025-06-27T00:00:00.000Z
+updated: 2025-06-27T00:00:00.000Z
+owner: figma
+version: 1
+content_hash: d0f7de6b8af7656d
+token_count: 153
+chunk_title: >-
+  boundVariables?: { readonly [field in VariableBindableNodeField]?:
+  VariableAlias} & { readonly [field in VariableBindableTextField]?:
+  VariableAlias[]} & { fills: VariableAlias[]; strokes: VariableAlias[];
+  effects: VariableAlias[]; layoutGrids: VariableAlias[]; componentProperties: {
+  [propertyName: string]: VariableAlias }; textRangeFills: VariableAlias[] }
+  [readonly] + setBoundVariable(field: VariableBindableNodeField |
+  VariableBindableTextField, variable: Variable | null): void
+chunk_slug: StampNode-boundvariables-readonly-field-in-variabl
+chunk_index: 22
+chunk_of_total: 57
+parent_file: StampNode.md
+parent_slug: StampNode
+char_count: 535
+heading_level: h3
+chunk_type: guide
+merge_type: merged
+tags: []
+sibling_chunks:
+  - StampNode-introduction
+  - StampNode-getauthorasync-promise
+  - StampNode-id-string-readonly
+  - StampNode-parent-basenode-childrenmixin-null-reado
+  - StampNode-name-string-removed-boolean-readonly
+  - StampNode-tostring-string
+  - StampNode-remove-void-setrelaunchdatadata-command-
+  - StampNode-getrelaunchdata-command-string-string-is
+  - StampNode-getcssasync-promise-key-string-string-
+  - StampNode-gettoplevelframe-framenode-undefined
+  - StampNode-getplugindatakey-string-string
+  - StampNode-setplugindatakey-string-value-string-voi
+  - StampNode-getplugindatakeys-string
+  - StampNode-getsharedplugindatanamespace-string-key-
+  - StampNode-setsharedplugindatanamespace-string-key-
+  - StampNode-getsharedplugindatakeysnamespace-string-
+  - StampNode-getdevresourcesasyncoptions-includechild
+  - StampNode-editdevresourceasynccurrenturl-string-ne
+  - StampNode-setdevresourcepreviewasyncurl-string-pre
+  - StampNode-locked-boolean
+  - StampNode-stucknodes-scenenode-readonly
+  - StampNode-attachedconnectors-connectornode-readonl
+  - StampNode-inferredvariables-readonly-field-in-vari
+  - StampNode-resolvedvariablemodes-collectionid-strin
+  - StampNode-clearexplicitvariablemodeforcollectionco
+  - StampNode-opacity-number-blendmode-blendmode
+  - StampNode-ismask-boolean-masktype-masktype
+  - StampNode-effects-readonlyarray-effectstyleid-stri
+  - StampNode-seteffectstyleidasyncstyleid-string-prom
+  - StampNode-fillstyleid-string-figmamixed
+  - StampNode-setfillstyleidasyncstyleid-string-promis
+  - StampNode-strokestyleid-string
+  - StampNode-setstrokestyleidasyncstyleid-string-prom
+  - StampNode-strokejoin-strokejoin-figmamixed-strokea
+  - StampNode-dashpattern-readonlyarray-strokegeometry
+  - StampNode-strokecap-strokecap-figmamixed-strokemit
+  - StampNode-outlinestroke-vectornode-null
+  - StampNode-fillgeometry-vectorpaths-readonly-x-numb
+  - StampNode-maxwidth-number-null-minheight-number-nu
+  - StampNode-maxheight-number-null-relativetransform-
+  - StampNode-absolutetransform-transform-readonly-abs
+  - StampNode-layoutalign-min-center-max-stretch-inher
+  - StampNode-layoutgrow-number
+  - StampNode-layoutpositioning-auto-absolute
+  - StampNode-absoluterenderbounds-rect-null-readonly
+  - StampNode-constrainproportions-boolean-rotation-nu
+  - StampNode-layoutsizinghorizontal-fixed-hug-fill
+  - StampNode-layoutsizingvertical-fixed-hug-fill
+  - StampNode-resizewidth-number-height-number-void
+  - StampNode-resizewithoutconstraintswidth-number-hei
+  - StampNode-rescalescale-number-void-exportsettings-
+  - StampNode-exportasyncsettings-exportsettingsrest-p
+  - StampNode-reactions-readonlyarray
+  - StampNode-setreactionsasyncreactions-array-promise
+  - StampNode-targetaspectratio-vector-null-readonly
+  - StampNode-lockaspectratio-void-unlockaspectratio-v
+merged_titles:
+  - >-
+    boundVariables?: { readonly [field in VariableBindableNodeField]?:
+    VariableAlias} & { readonly [field in VariableBindableTextField]?:
+    VariableAlias[]} & { fills: VariableAlias[]; strokes: VariableAlias[];
+    effects: VariableAlias[]; layoutGrids: VariableAlias[]; componentProperties:
+    { [propertyName: string]: VariableAlias }; textRangeFills: VariableAlias[] }
+    [readonly]
+  - >-
+    setBoundVariable(field: VariableBindableNodeField |
+    VariableBindableTextField, variable: Variable | null): void
+compiler: noos-figma
+---
+
+The variables bound to a particular field on this node. Please see the [Working with Variables](/plugin-docs/working-with-variables/)
+ guide for how to get and set variable bindings.
+
+Binds the provided `field` on this node to the given variable. Please see the [Working with Variables](/plugin-docs/working-with-variables/)
+ guide for how to get and set variable bindings.
+
+If `null` is provided as the variable, the given `field` will be unbound from any variables.
+
+[View more →](/plugin-docs/api/properties/nodes-setboundvariable/)

@@ -1,0 +1,84 @@
+---
+title: 'getSharedPluginDataKeys(namespace: string): string[]'
+slug: LineNode-getsharedplugindatakeysnamespace-string-
+source_file: plugin-api-LineNode.html
+source_url: 'https://www.figma.com/plugin-docs/api/LineNode/'
+doc_type: plugin-api
+created: 2025-06-27T00:00:00.000Z
+updated: 2025-06-27T00:00:00.000Z
+owner: figma
+version: 1
+content_hash: 3fd0ffde5160545a
+token_count: 70
+chunk_title: 'getSharedPluginDataKeys(namespace: string): string[]'
+chunk_slug: LineNode-getsharedplugindatakeysnamespace-string-
+chunk_index: 14
+chunk_of_total: 54
+parent_file: LineNode.md
+parent_slug: LineNode
+char_count: 242
+heading_level: h3
+chunk_type: guide
+merge_type: atomic
+tags: []
+sibling_chunks:
+  - LineNode-introduction
+  - LineNode-id-string-readonly
+  - LineNode-parent-basenode-childrenmixin-null-reado
+  - LineNode-name-string-removed-boolean-readonly
+  - LineNode-tostring-string
+  - LineNode-remove-void-setrelaunchdatadata-command-
+  - LineNode-getrelaunchdata-command-string-string-is
+  - LineNode-getcssasync-promise-key-string-string-
+  - LineNode-gettoplevelframe-framenode-undefined
+  - LineNode-getplugindatakey-string-string
+  - LineNode-setplugindatakey-string-value-string-voi
+  - LineNode-getplugindatakeys-string
+  - LineNode-getsharedplugindatanamespace-string-key-
+  - LineNode-setsharedplugindatanamespace-string-key-
+  - LineNode-getdevresourcesasyncoptions-includechild
+  - LineNode-editdevresourceasynccurrenturl-string-ne
+  - LineNode-setdevresourcepreviewasyncurl-string-pre
+  - LineNode-locked-boolean
+  - LineNode-stucknodes-scenenode-readonly
+  - LineNode-attachedconnectors-connectornode-readonl
+  - LineNode-boundvariables-readonly-field-in-variabl
+  - LineNode-inferredvariables-readonly-field-in-vari
+  - LineNode-resolvedvariablemodes-collectionid-strin
+  - LineNode-clearexplicitvariablemodeforcollectionco
+  - LineNode-opacity-number-blendmode-blendmode
+  - LineNode-ismask-boolean-masktype-masktype
+  - LineNode-effects-readonlyarray-effectstyleid-stri
+  - LineNode-seteffectstyleidasyncstyleid-string-prom
+  - LineNode-fillstyleid-string-figmamixed
+  - LineNode-setfillstyleidasyncstyleid-string-promis
+  - LineNode-strokestyleid-string
+  - LineNode-setstrokestyleidasyncstyleid-string-prom
+  - LineNode-strokejoin-strokejoin-figmamixed-strokea
+  - LineNode-dashpattern-readonlyarray-strokegeometry
+  - LineNode-strokecap-strokecap-figmamixed-strokemit
+  - LineNode-outlinestroke-vectornode-null
+  - LineNode-fillgeometry-vectorpaths-readonly-x-numb
+  - LineNode-maxwidth-number-null-minheight-number-nu
+  - LineNode-maxheight-number-null-relativetransform-
+  - LineNode-absolutetransform-transform-readonly-abs
+  - LineNode-layoutalign-min-center-max-stretch-inher
+  - LineNode-layoutgrow-number
+  - LineNode-layoutpositioning-auto-absolute
+  - LineNode-absoluterenderbounds-rect-null-readonly
+  - LineNode-constrainproportions-boolean-rotation-nu
+  - LineNode-layoutsizinghorizontal-fixed-hug-fill
+  - LineNode-layoutsizingvertical-fixed-hug-fill
+  - LineNode-resizewidth-number-height-number-void
+  - LineNode-resizewithoutconstraintswidth-number-hei
+  - LineNode-rescalescale-number-void-constraints-con
+  - LineNode-exportsettings-readonlyarray-exportasync
+  - LineNode-reactions-readonlyarray
+  - LineNode-setreactionsasyncreactions-array-promise
+compiler: noos-figma
+---
+
+Retrieves a list of all keys stored on this node or style using [`setSharedPluginData`](/plugin-docs/api/properties/nodes-setsharedplugindata/)
+. This enables iterating through all data stored in a given namespace.
+
+## Dev resource properties

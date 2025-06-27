@@ -1,0 +1,231 @@
+---
+title: >-
+  getStyledTextSegments)[]>(fields: StyledTextSegmentFields, start?: number,
+  end?: number): Array>
+slug: node-properties-getstyledtextsegmentsfields-styledtextse
+source_file: plugin-api-node-properties.html
+source_url: 'https://www.figma.com/plugin-docs/api/node-properties/'
+doc_type: plugin-api
+created: 2025-06-27T00:00:00.000Z
+updated: 2025-06-27T00:00:00.000Z
+owner: figma
+version: 1
+content_hash: 2ea1d03cf45e6bcf
+token_count: 64
+chunk_title: >-
+  getStyledTextSegments)[]>(fields: StyledTextSegmentFields, start?: number,
+  end?: number): Array>
+chunk_slug: node-properties-getstyledtextsegmentsfields-styledtextse
+chunk_index: 79
+chunk_of_total: 192
+parent_file: node-properties.md
+parent_slug: node-properties
+char_count: 224
+heading_level: h3
+chunk_type: guide
+merge_type: atomic
+tags: []
+sibling_chunks:
+  - node-properties-introduction
+  - node-properties-absoluteboundingbox-rect-null-readonly
+  - node-properties-absoluterenderbounds-rect-null-readonly
+  - node-properties-absolutetransform-transform-readonly
+  - node-properties-addcomponentpropertypropertyname-string-
+  - node-properties-adddevresourceasyncurl-string-name-strin
+  - node-properties-addmeasurementstart-node-scenenode-side-
+  - node-properties-annotations-readonlyarray
+  - node-properties-appendchildchild-scenenode-void
+  - node-properties-attachedconnectors-connectornode-readonl
+  - node-properties-backgroundstyleid-string
+  - node-properties-backgrounds-readonlyarray-blendmode-blen
+  - node-properties-bottomleftradius-number-bottomrightradiu
+  - node-properties-boundvariables-readonly-field-in-variabl
+  - node-properties-characters-string
+  - node-properties-children-readonlyarray-readonly
+  - node-properties-clearexplicitvariablemodeforcollectionco
+  - node-properties-clipscontent-boolean
+  - node-properties-componentpropertydefinitions-componentpr
+  - node-properties-componentpropertyreferences-nodeproperty
+  - node-properties-constrainproportions-boolean
+  - node-properties-constraints-constraints
+  - node-properties-cornerradius-number-figmamixed
+  - node-properties-cornersmoothing-number
+  - node-properties-counteraxisaligncontent-auto-spacebetwee
+  - node-properties-counteraxisalignitems-min-max-center-bas
+  - node-properties-counteraxissizingmode-fixed-auto
+  - node-properties-counteraxisspacing-number-null
+  - node-properties-dashpattern-readonlyarray
+  - node-properties-deletecharactersstart-number-end-number-
+  - node-properties-deletecomponentpropertypropertyname-stri
+  - node-properties-deletemeasurementid-string-void
+  - node-properties-description-string
+  - node-properties-descriptionmarkdown-string
+  - node-properties-detachedinfo-detachedinfo-null-readonly
+  - node-properties-devstatus-devstatus
+  - node-properties-documentationlinks-readonlyarray
+  - node-properties-editcomponentpropertypropertyname-string
+  - node-properties-editdevresourceasynccurrenturl-string-ne
+  - node-properties-editmeasurementid-string-newvalue-offset
+  - node-properties-effectstyleid-string
+  - node-properties-effects-readonlyarray
+  - node-properties-expanded-boolean
+  - node-properties-explicitvariablemodes-collectionid-strin
+  - node-properties-exportasyncsettings-exportsettings-promi
+  - node-properties-exportasyncsettings-exportsettingsrest-p
+  - node-properties-exportsettings-readonlyarray
+  - node-properties-fillgeometry-vectorpaths-readonly
+  - node-properties-fillstyleid-string-figmamixed
+  - node-properties-fills-readonlyarray-figmamixed
+  - node-properties-findallcallback-node-scenenode-boolean-s
+  - node-properties-findallwithcriteriacriteria-findallcrite
+  - node-properties-findchildcallback-node-scenenode-boolean
+  - node-properties-findchildrencallback-node-scenenode-bool
+  - node-properties-findonecallback-node-scenenode-boolean-s
+  - node-properties-findwidgetnodesbywidgetidwidgetid-string
+  - node-properties-fontname-fontname-figmamixed
+  - node-properties-fontsize-number-figmamixed-fontweight-nu
+  - node-properties-getcssasync-promise-key-string-string-
+  - node-properties-getdevresourcesasyncoptions-includechild
+  - node-properties-getmeasurements-measurement-getmeasureme
+  - node-properties-getplugindatakey-string-string
+  - node-properties-getplugindatakeys-string
+  - node-properties-getpublishstatusasync-promise-getrangeal
+  - node-properties-getrangeboundvariablestart-number-end-nu
+  - node-properties-getrangefillsstart-number-end-number-pai
+  - node-properties-getrangefontsizestart-number-end-number-
+  - node-properties-getrangehyperlinkstart-number-end-number
+  - node-properties-getrangeindentationstart-number-end-numb
+  - node-properties-getrangelineheightstart-number-end-numbe
+  - node-properties-getrangelistspacingstart-number-end-numb
+  - node-properties-getrangeparagraphindentstart-number-end-
+  - node-properties-getrangetextcasestart-number-end-number-
+  - node-properties-getrangetextdecorationcolorstart-number-
+  - node-properties-getrangetextdecorationskipinkstart-numbe
+  - node-properties-getrangetextdecorationthicknessstart-num
+  - node-properties-getrelaunchdata-command-string-string-
+  - node-properties-getsharedplugindatanamespace-string-key-
+  - node-properties-getsharedplugindatakeysnamespace-string-
+  - node-properties-gettoplevelframe-framenode-undefined
+  - node-properties-gridstyleid-string
+  - node-properties-guides-readonlyarray
+  - node-properties-handlemirroring-handlemirroring-figmamix
+  - node-properties-hangingpunctuation-boolean-hasmissingfon
+  - node-properties-height-number-readonly
+  - node-properties-horizontalpadding-number-hyperlink-hyper
+  - node-properties-id-string-readonly
+  - node-properties-inferredautolayout-inferredautolayoutres
+  - node-properties-inferredvariables-readonly-field-in-vari
+  - node-properties-insertcharactersstart-number-characters-
+  - node-properties-isasset-boolean-readonly
+  - node-properties-ismask-boolean
+  - node-properties-itemreversezindex-boolean
+  - node-properties-itemspacing-number
+  - node-properties-key-string-readonly
+  - node-properties-layoutalign-min-center-max-stretch-inher
+  - node-properties-layoutgrids-readonlyarray
+  - node-properties-layoutgrow-number
+  - node-properties-layoutmode-none-horizontal-vertical
+  - node-properties-layoutpositioning-auto-absolute
+  - node-properties-layoutsizinghorizontal-fixed-hug-fill
+  - node-properties-layoutsizingvertical-fixed-hug-fill
+  - node-properties-layoutwrap-nowrap-wrap
+  - node-properties-leadingtrim-leadingtrim-figmamixed-lette
+  - node-properties-lineheight-lineheight-figmamixed-listspa
+  - node-properties-lockaspectratio-void
+  - node-properties-locked-boolean
+  - node-properties-masktype-masktype
+  - node-properties-maxheight-number-null
+  - node-properties-maxwidth-number-null
+  - node-properties-minheight-number-null
+  - node-properties-minwidth-number-null
+  - node-properties-name-string
+  - node-properties-numberoffixedchildren-number
+  - node-properties-opacity-number
+  - node-properties-opentypefeatures-readonly-feature-in-ope
+  - node-properties-outlinestroke-vectornode-null
+  - node-properties-overflowdirection-overflowdirection
+  - node-properties-overlaybackground-overlaybackground-read
+  - node-properties-overlaypositiontype-overlaypositiontype-
+  - node-properties-paddingleft-number
+  - node-properties-paddingright-number
+  - node-properties-paddingtop-number
+  - node-properties-paragraphindent-number-paragraphspacing-
+  - node-properties-parent-basenode-childrenmixin-null-reado
+  - node-properties-primaryaxisalignitems-min-max-center-spa
+  - node-properties-primaryaxissizingmode-fixed-auto
+  - node-properties-reactions-readonlyarray
+  - node-properties-relativetransform-transform
+  - node-properties-remote-boolean-readonly
+  - node-properties-remove-void
+  - node-properties-removed-boolean-readonly
+  - node-properties-rescalescale-number-void
+  - node-properties-resizewidth-number-height-number-void
+  - node-properties-resizewithoutconstraintswidth-number-hei
+  - node-properties-resolvedvariablemodes-collectionid-strin
+  - node-properties-rotation-number
+  - node-properties-setboundvariablefield-variablebindableno
+  - node-properties-setdevresourcepreviewasyncurl-string-pre
+  - node-properties-seteffectstyleidasyncstyleid-string-prom
+  - node-properties-setexplicitvariablemodeforcollectioncoll
+  - node-properties-setfillstyleidasyncstyleid-string-promis
+  - node-properties-setgridstyleidasyncstyleid-string-promis
+  - node-properties-setplugindatakey-string-value-string-voi
+  - node-properties-setrangeboundvariablestart-number-end-nu
+  - node-properties-setrangefillstyleidstart-number-end-numb
+  - node-properties-setrangefillstyleidasyncstart-number-end
+  - node-properties-setrangefontnamestart-number-end-number-
+  - node-properties-setrangehyperlinkstart-number-end-number
+  - node-properties-setrangeindentationstart-number-end-numb
+  - node-properties-setrangelineheightstart-number-end-numbe
+  - node-properties-setrangelistspacingstart-number-end-numb
+  - node-properties-setrangeparagraphspacingstart-number-end
+  - node-properties-setrangetextdecorationstart-number-end-n
+  - node-properties-setrangetextdecorationoffsetstart-number
+  - node-properties-setrangetextdecorationstylestart-number-
+  - node-properties-setrangetextstyleidstart-number-end-numb
+  - node-properties-setrangetextstyleidasyncstart-number-end
+  - node-properties-setreactionsasyncreactions-array-promise
+  - node-properties-setrelaunchdatadata-command-string-strin
+  - node-properties-setsharedplugindatanamespace-string-key-
+  - node-properties-setstrokestyleidasyncstyleid-string-prom
+  - node-properties-setvectornetworkasyncvectornetwork-vecto
+  - node-properties-strokebottomweight-number
+  - node-properties-strokecap-strokecap-figmamixed
+  - node-properties-strokegeometry-vectorpaths-readonly
+  - node-properties-strokejoin-strokejoin-figmamixed
+  - node-properties-strokeleftweight-number
+  - node-properties-strokemiterlimit-number
+  - node-properties-strokerightweight-number
+  - node-properties-strokestyleid-string
+  - node-properties-stroketopweight-number
+  - node-properties-strokeweight-number-figmamixed
+  - node-properties-strokes-readonlyarray
+  - node-properties-strokesincludedinlayout-boolean
+  - node-properties-stucknodes-scenenode-readonly
+  - node-properties-stuckto-scenenode-null
+  - node-properties-targetaspectratio-vector-null-readonly
+  - node-properties-textcase-textcase-figmamixed-textdecorat
+  - node-properties-textdecorationcolor-textdecorationcolor-
+  - node-properties-textdecorationskipink-boolean-figmamixed
+  - node-properties-textdecorationthickness-textdecorationth
+  - node-properties-topleftradius-number-toprightradius-numb
+  - node-properties-unlockaspectratio-void
+  - node-properties-variantproperties-property-string-string
+  - node-properties-vectornetwork-vectornetwork
+  - node-properties-vectorpaths-vectorpaths-verticalpadding-
+  - node-properties-visible-boolean
+  - node-properties-width-number-readonly
+  - node-properties-x-number
+  - node-properties-y-number
+compiler: noos-figma
+---
+
+Supported on:
+
+- TextNode
+- TextPathNode
+- TextSublayerNode
+
+Get text segments along with the desired text properties (font size, text case, etc...)
+
+[View more →](/plugin-docs/api/properties/TextNode-getstyledtextsegments/)

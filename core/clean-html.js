@@ -77,6 +77,9 @@ function cleanHtml(html, docType) {
   $('.hash-link, .anchor, .edit-page-link').remove();
   $('script, style, nav, .breadcrumbs').remove();
   
+  // Convert hr elements to line breaks to preserve spacing
+  $('hr').replaceWith('\n\n');
+  
   // Clean up code blocks and inline code
   $('code').each((i, el) => {
     const $el = $(el);
@@ -90,12 +93,12 @@ function cleanHtml(html, docType) {
     }
   });
   
-  // Convert headers to markdown
+  // Convert headers to markdown with proper spacing
   $('h1, h2, h3, h4, h5, h6').each((i, el) => {
     const $el = $(el);
     const level = el.tagName.toLowerCase();
     const hashes = '#'.repeat(parseInt(level.charAt(1)));
-    $el.replaceWith(`${hashes} ${$el.text()}\n\n`);
+    $el.replaceWith(`\n\n${hashes} ${$el.text()}\n\n`);
   });
   
   // Convert lists
@@ -117,13 +120,14 @@ function cleanHtml(html, docType) {
     $el.replaceWith(markdown + '\n');
   });
   
-  // Convert links
+  // Convert links with proper spacing
   $('a').each((i, el) => {
     const $el = $(el);
     const href = $el.attr('href');
     const text = $el.text();
     if (href && text) {
-      $el.replaceWith(`[${text}](${href})`);
+      // Add line break after links to prevent concatenation with following elements
+      $el.replaceWith(`[${text}](${href})\n`);
     } else {
       $el.replaceWith(text);
     }

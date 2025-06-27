@@ -1,0 +1,151 @@
+[2025-06-27T07:02:44.432Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.433Z] load/CHUNK_LOAD_FAILED: Failed to load chunk: can not read a block mapping entry; a multiline key may not be an implicit key at line 3, column 5:
+    slug: Action-setvariable-action
+        ^
+[2025-06-27T07:02:44.433Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.436Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.437Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.439Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.445Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.445Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.446Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.446Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.448Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.451Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.451Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.451Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.451Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.452Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.453Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.453Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.454Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.454Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.454Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.455Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.455Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.455Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.456Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.457Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.457Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.457Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.458Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.458Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.458Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.458Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.458Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.458Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.458Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.459Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.459Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.459Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.459Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.460Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.460Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.461Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.461Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.462Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.462Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.465Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.465Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.465Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.465Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.466Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.466Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.466Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.466Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.466Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.466Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.467Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.467Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.467Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.468Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.468Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.468Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.468Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.469Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.469Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.469Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.469Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.470Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.470Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.470Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.470Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.470Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.470Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.471Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.471Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.471Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.471Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.471Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.471Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.472Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.472Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.472Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.472Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.472Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.473Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.473Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.473Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.473Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.474Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.474Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.475Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.475Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.475Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.475Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.475Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.476Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.476Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.476Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.476Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.476Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.478Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.479Z] load/YAML_FRONTMATTER_REPAIRED: Fixed YAML frontmatter syntax errors
+[2025-06-27T07:02:44.481Z] repair/SCHEMA_FIELDS_NORMALIZED: Added 4 missing required field(s)
+[2025-06-27T07:02:44.482Z] repair/MALFORMED_HEADING_REPAIRED: Fixed 2 malformed heading(s)
+[2025-06-27T07:02:44.482Z] repair/MALFORMED_HEADING_REPAIRED: Fixed 1 malformed heading(s)
+[2025-06-27T07:02:44.485Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: can not read a block mapping entry; a multiline key may not be an implicit key at line 3, column 5:
+    slug: Action-setvariable-action
+        ^
+[2025-06-27T07:02:44.485Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: can not read a block mapping entry; a multiline key may not be an implicit key at line 3, column 5:
+    slug: Action-url-action-updatemediar ... 
+        ^
+[2025-06-27T07:02:44.487Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: can not read a block mapping entry; a multiline key may not be an implicit key at line 3, column 5:
+    slug: CodegenPreference-unit-prefere ... 
+        ^
+[2025-06-27T07:02:44.501Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `imports`
+           ^
+[2025-06-27T07:02:44.501Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `include` and `exclude`
+           ^
+[2025-06-27T07:02:44.501Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `interactiveSetupFigmaFileUrl`
+           ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `"close"`
+           ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: missed comma between flow collection entries at line 34, column 20:
+    merged_titles: ["`"currentpagechange"`", "`"selecti ... 
+                       ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `"documentchange"`
+           ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `"drop"`
+           ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `"run"`
+           ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `"stylechange"`
+           ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `"textreview"`
+           ^
+[2025-06-27T07:02:44.508Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: missed comma between flow collection entries at line 34, column 20:
+    merged_titles: ["`"timerresume"`", "`"timeradjust"`"]
+                       ^
+[2025-06-27T07:02:44.526Z] write/CHUNK_WRITE_FAILED: Failed to write chunk: end of the stream or a document separator is expected at line 2, column 8:
+    title: `figma.connect`
+           ^
