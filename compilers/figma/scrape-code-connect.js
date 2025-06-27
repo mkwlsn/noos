@@ -140,8 +140,8 @@ const { chromium } = require("playwright");
 
   const visited = new Set();
   const failedPages = new Set();
-  const outDir = "out";
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
+  const outDir = "output/raw";
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
   // Process each link with comprehensive error handling
   for (const link of links) {

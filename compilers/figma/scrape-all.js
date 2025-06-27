@@ -19,9 +19,9 @@ console.log("╚═════════════════════�
 console.log("");
 
 // Ensure output directory exists
-const outDir = "out";
+const outDir = "output/raw";
 if (!fs.existsSync(outDir)) {
-  fs.mkdirSync(outDir);
+  fs.mkdirSync(outDir, { recursive: true });
   console.log(`📁 Created output directory: ${outDir}/`);
 }
 

@@ -14,8 +14,8 @@ const HEADING_PATTERNS = {
 
 // Generate run timestamp
 const runDate = new Date().toISOString().split("T")[0];
-const cleanDir = `clean/${runDate}`;
-const chunksDir = `clean/chunks/${runDate}`;
+const cleanDir = `output/clean/${runDate}`;
+const chunksDir = `output/chunks/${runDate}`;
 const chunkManifestPath = `${chunksDir}/chunk-manifest.json`;
 const errorLogPath = `${chunksDir}/chunk-errors.log`;
 

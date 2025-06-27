@@ -15,8 +15,8 @@ const { chromium } = require("playwright");
 
   const visited = new Set();
   const failedUrls = new Set();
-  const outDir = "out";
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
+  const outDir = "output/raw";
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
   let pageCount = 0;
   let maxPages = 100; // Safety limit to prevent infinite loops

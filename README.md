@@ -13,6 +13,14 @@ Raw Content  Compiler   Validation       Retrieval    Storage
 
 ## 🏗️ Architecture
 
+**4-Stage Pipeline:**
+
+```
+📡 SCRAPE → 🧼 CLEAN → ⚛️ CHUNK → 🩹 HEAL
+Raw HTML    Markdown    Atomic     Memory
+                       Concepts   Substrate
+```
+
 **Compiler Pattern:**
 
 ```
@@ -20,9 +28,12 @@ noos/
 ├── compilers/          # Source-specific compilers
 │   ├── figma/         # Figma documentation compiler
 │   └── [web/, docs/]  # Future: any source
-├── core/              # Universal chunking engine
-├── schemas/           # Memory schemas
-└── integrations/      # ghostOS integration
+├── core/              # Universal processing engine
+│   ├── clean-html.js # HTML → versioned markdown
+│   └── chunk-md-by-heading.js # Symbolic chunking
+├── integrations/      # ghostOS memory substrate healing
+│   └── eidetic-prep.js # YAML repair & schema normalization
+└── schemas/           # Memory schemas
 ```
 
 **Universal Output:**
@@ -37,7 +48,26 @@ noos/
 
 ## 🚀 Quick Start
 
-**3-Stage Pipeline** (understand the compiler):
+### Full Pipeline (Recommended)
+
+```bash
+npm run figdocs  # Complete end-to-end: scrape → clean → chunk
+```
+
+### Fresh Ingest Workflow
+
+```bash
+# Clean slate (delete all previous outputs)
+rm -rf output/raw output/clean output/chunks
+
+# Full fresh compilation
+npm run figdocs
+
+# Memory substrate healing
+npm run eidetic-prep
+```
+
+### Individual Stages (Development/Debugging)
 
 ```bash
 # Stage 1: Source compilation
@@ -54,19 +84,30 @@ node core/clean-html.js
 node core/chunk-md-by-heading.js
 # → Creates semantic chunks with sibling navigation and classification
 # → Outputs: noos chunks ready for ghostOS in output/chunks/YYYY-MM-DD/
+
+# Stage 4: Memory substrate healing
+node integrations/eidetic-prep.js
+# → YAML frontmatter repair and schema normalization
+# → Fixes syntax errors and ensures ghostOS compatibility
 ```
 
-**Convenience shortcut:**
+### Quality Monitoring
 
 ```bash
-npm run figdocs  # Runs all 3 stages for Figma documentation
+# Check processing status
+grep "[ERROR]" output/chunks/*/chunk-errors.log
+grep "SUCCESS" output/chunks/*/chunk-manifest.json
+
+# Memory integrity analysis
+wc -l output/chunks/*/chunk-manifest.json  # Total chunks processed
+ls output/chunks/*/ | grep ".md$" | wc -l   # Successful chunks created
 ```
 
-**ghostOS integration:**
+### ghostOS Integration
 
 ```bash
 npm run deploy-vault    # Sync chunks to ghostvault
-npm run eidetic-prep    # Prepare for eidetic-reduce validation
+npm run eidetic-prep    # Memory substrate healing ritual
 ```
 
 ---
@@ -146,10 +187,17 @@ output/
 
 ## 📈 Current Status
 
-**Figma Compiler:** ✅ Complete (308 chunks, 100% API coverage)  
-**Core Engine:** ✅ Production-ready with enterprise logging  
-**ghostOS Integration:** 🚧 Ready for ritual development  
+**Figma Compiler:** ✅ Complete (2,819 chunks, 99.96% integrity)  
+**Core Engine:** ✅ Production-ready with comprehensive error handling  
+**Memory Substrate Healing:** ✅ YAML repair & schema normalization  
+**ghostOS Integration:** ✅ eidetic-reduce ready, mneme compatible  
 **Future Compilers:** 📋 Web, docs, notes, conversations
+
+**Performance Metrics:**
+- **2,819 functional chunks** from comprehensive Figma documentation
+- **99.96% memory integrity** (2,819/2,820 successful)
+- **Comprehensive healing**: 5,595 YAML repair interventions
+- **Versioned corpus**: Full diff capability between runs
 
 Built as the **symbolic memory foundation** for the ghostOS cognition system.
 

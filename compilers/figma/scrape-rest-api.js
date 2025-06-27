@@ -117,8 +117,8 @@ const { chromium } = require("playwright");
   console.log(`📋 Found ${sections.length} sections, ${validSections.length} with substantial content`);
 
   // Ensure output dir exists
-  const outDir = "out";
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
+  const outDir = "output/raw";
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
   // Save all sections, including those with minimal content for completeness
   for (const { id, html } of sections) {

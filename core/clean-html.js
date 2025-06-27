@@ -12,8 +12,8 @@ const BASE_MAP = {
 
 // Generate run timestamp
 const runDate = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
-const outDir = "out";
-const cleanDir = `clean/${runDate}`;
+const outDir = "output/raw";
+const cleanDir = `output/clean/${runDate}`;
 const manifestPath = `${cleanDir}/manifest.json`;
 
 console.log("╔══════════════════════════════════════════════════════════════╗");
