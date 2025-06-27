@@ -58,9 +58,10 @@ for (const script of scripts) {
   
   try {
     // Capture output but don't display it live to keep UX clean
-    const output = execSync(`node ${script.name}`, { 
+    const output = execSync(`node compilers/figma/${script.name}`, { 
       encoding: 'utf8',
-      stdio: ['pipe', 'pipe', 'pipe']
+      stdio: ['pipe', 'pipe', 'pipe'],
+      cwd: path.join(__dirname, '../..')
     });
     
     const scriptTime = ((Date.now() - scriptStart) / 1000).toFixed(1);

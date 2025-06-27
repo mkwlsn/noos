@@ -1,0 +1,14 @@
+{
+  "run_date": "2025-06-27",
+  "run_timestamp": "2025-06-27T08:36:08.865Z",
+  "source_directory": "output/clean/2025-06-27",
+  "total_source_files": 0,
+  "total_chunks": 0,
+  "chunks_created": 0,
+  "chunks_merged": 0,
+  "chunks_skipped": 0,
+  "avg_chunk_size": 0,
+  "files": [],
+  "total_tokens": 0,
+  "total_chars": 0
+}
