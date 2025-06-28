@@ -1,7 +1,3 @@
-# Scraped documentation output
-out/
-*.html
-
 # Symbolic memory outputs: include folder structure but ignore generated content
 output/raw/*
 output/clean/*
