@@ -16,12 +16,12 @@ const colors = {
 
 // Icons for visual scanning
 const icons = {
-  error: 'L',
-  warning: '�',
-  success: '',
-  info: '=',
-  health: '=�',
-  fix: '=�'
+  error: '❌',
+  warning: '⚠️',
+  success: '✅',
+  info: '🔍',
+  health: '📊',
+  fix: '💡'
 };
 
 class EideticErrorAnalyzer {
@@ -225,12 +225,14 @@ class EideticErrorAnalyzer {
     }
 
     console.log(`${colors.blue}${icons.info} Latest Run Analysis${colors.reset} ${colors.dim}(${runDate})${colors.reset}`);
-    console.log(''.repeat(50));
+    console.log('━'.repeat(50));
     console.log();
 
-    // Stage status (simplified - just showing chunks for now)
-    console.log(`${colors.green}${icons.success} SCRAPE${colors.reset}    Status unknown (check raw/ logs)`);
-    console.log(`${colors.green}${icons.success} CLEAN${colors.reset}     Status unknown (check clean/ logs)`);
+    // Show stage status unless --chunks filter is active
+    if (!this.filters.chunks) {
+      console.log(`${colors.green}${icons.success} SCRAPE${colors.reset}    Status unknown (check raw/ logs)`);
+      console.log(`${colors.green}${icons.success} CLEAN${colors.reset}     Status unknown (check clean/ logs)`);
+    }
     
     if (filteredErrors.length > 0) {
       console.log(`${colors.red}${icons.error} CHUNKS${colors.reset}    ${filteredErrors.length} errors${filteredWarnings.length > 0 ? `, ${filteredWarnings.length} warnings` : ''}`);
@@ -241,7 +243,15 @@ class EideticErrorAnalyzer {
     }
 
     console.log();
-    console.log(`${colors.bold}${icons.health} HEALTH:${colors.reset} ${health.valid}/${health.total} chunks valid (${health.percentage}%)`);
+    
+    // Show filtered health info if filters are active
+    if (this.filters.title || this.filters.type) {
+      const totalFiltered = filteredErrors.length + filteredWarnings.length;
+      const originalTotal = errors.length + warnings.length;
+      console.log(`${colors.bold}${icons.health} FILTERED:${colors.reset} ${totalFiltered} issues match criteria (${originalTotal} total)`);
+    } else {
+      console.log(`${colors.bold}${icons.health} HEALTH:${colors.reset} ${health.valid}/${health.total} chunks valid (${health.percentage}%)`);
+    }
     console.log();
 
     // Show specific issues
