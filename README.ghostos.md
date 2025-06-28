@@ -106,7 +106,7 @@ ls output/chunks/*/ | grep ".md$" | wc -l   # Successful chunks created
 ### ghostOS Integration
 
 ```bash
-npm run deploy-vault    # Sync chunks to ghostvault
+npm run vault-deploy    # Sync chunks to ghostvault
 npm run eidetic-prep    # Memory substrate healing ritual
 ```
 

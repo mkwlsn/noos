@@ -66,6 +66,9 @@ npm run figdocs
 # Run just healing / validation
 npm run eidetic-prep
 npm run eidetic-reduce
+
+# Check symbolic memory health
+npm run eidetic-errors
 ```
 
 ## 📄 What You'll Get
@@ -74,16 +77,52 @@ After one run (with the current compilers):
 
 - ~2,800 symbolic memory chunks
 - Token-aware, hallucination-resistant
-- Logs: `eidetic-prep.log`, `chunk-errors.log`, `healing-summary.txt`
+- Introspectable logs at each stage:
 
-## 🛠 When things go wrong
+  - `eidetic-prep.log` — records every field repair or schema fix per chunk
+  - `healing-summary.txt` — tallies what was healed, skipped, or untouched
+  - `chunk-errors.log` — lists any chunks that failed validation or linting
 
-| Symptom             | Check                                     |
-| ------------------- | ----------------------------------------- |
-| `scrape` fails      | Paths in `scrape-all.js` are likely wrong |
-| `.md` files missing | Re-run `chunk-md-by-heading.js`           |
-| YAML parse error    | Open file, check quotes/colons/indent     |
-| Chunks seem weird   | Run `eidetic-prep` and check logs         |
+    _(These logs are human-readable and greppable, although the system isn't structured around manual debugging or navigation.)_
+
+## 🛠 Troubleshooting
+
+_"If you have corpora problems I feel bad for you son."_
+
+**Quick diagnosis:**
+
+```zsh
+npm run eidetic-errors
+```
+
+This scans all logs and shows a colored health summary with specific issues and suggested fixes.
+
+**Advanced filtering:**
+
+```zsh
+# Focus only on chunk validation issues
+npm run eidetic-errors --chunks
+
+# Find issues with specific chunks
+npm run eidetic-errors --title "figma.showUI"
+npm run eidetic-errors --title "TextNode"
+
+# Filter by chunk type
+npm run eidetic-errors --type method
+npm run eidetic-errors --type guide
+
+# Full diagnostic trace with detailed context
+npm run eidetic-errors --trace
+```
+
+**Manual troubleshooting:**
+
+| Symptom             | Check                                                              |
+| ------------------- | ------------------------------------------------------------------ |
+| `scrape` fails      | Paths in `scrape-all.js` are likely wrong                          |
+| `.md` files missing | Re-run `chunk-md-by-heading.js`                                    |
+| YAML parse error    | Open file, check quotes/colons/indent                              |
+| Chunks seem weird   | Run `eidetic-errors` for a summary, or `eidetic-prep` for raw logs |
 
 ## 👻 Why noös exists
 
@@ -95,9 +134,7 @@ Originally scoped for ghostOS, the resulting memory format is optimized for inde
 
 noös is now decoupled and usable in any context where structured, LLM-ready memory is needed.
 
-<!-- Originally scoped for ghostOS, noös is now decoupled and usable in any context where structured, LLM-ready memory is needed. -->
-
-🔗 _Looking for the symbolic architecture doc? See [README.ghostOS.md](./README.ghostOS.md)_
+🔗 _Looking for the symbolic architecture doc? See [README.ghostOS.md](./README.ghostos.md)_
 
 ## 📄 License
 
