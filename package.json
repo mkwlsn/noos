@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "figdocs": "node compilers/figma/scrape-all.js && node core/clean-html.js && node core/chunk-md-by-heading.js",
     "deploy-vault": "node integrations/vault-deploy.js",
-    "eidetic-prep": "node integrations/eidetic-prep.js"
+    "eidetic-prep": "node integrations/eidetic-prep.js",
+    "eidetic-reduce": "node integrations/eidetic-reduce.js"
   },
   "keywords": [
     "ghostOS",

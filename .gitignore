@@ -2,20 +2,20 @@
 out/
 *.html
 
-# Cleaned/processed content (large files)
-clean/*.html
-clean/*.json
-clean/*.md
-clean/chunks/
-clean/vectors/
+# Symbolic memory outputs: include folder structure but ignore generated content
+output/raw/*
+output/clean/*
+output/chunks/*
 
-# Keep clean directory structure and small config files
-!clean/
-!clean/.gitkeep
-!clean/*.yaml
-!clean/*.yml
-!clean/*.txt
-!clean/README.md
+# Include output folder structure in repo, but ignore generated content
+!output/
+!output/raw/
+!output/raw/.gitkeep
+!output/clean/
+!output/clean/.gitkeep
+!output/chunks/
+!output/chunks/.gitkeep
+
 
 # Node modules
 node_modules/
@@ -49,3 +49,11 @@ pids
 # Temporary files
 tmp/
 temp/
+
+# claude code
+CLAUDE.md
+.claude/
+
+# Internal utilities (not shipped)
+tools/*
+!tools/.gitkeep
